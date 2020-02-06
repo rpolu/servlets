@@ -36,8 +36,6 @@ public class StudentRegServlet extends HttpServlet {
 
 		StudentDao studentDao = new StudentDao();
 		studentDao.saveStudent(studentModel);
-
-		// save db.\\\TODO
 		RequestDispatcher rd = req.getRequestDispatcher("/success.jsp");
 		rd.forward(req, resp);
 	}
