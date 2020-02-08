@@ -12,6 +12,16 @@
 	<servlet>
 		<servlet-name>is</servlet-name>
 		<servlet-class>com.elegant.InitServlet</servlet-class>
+
+		<init-param>
+			<param-name>course</param-name>
+			<param-value>Java</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>topic</param-name>
+			<param-value>Servlet</param-value>
+		</init-param>
 		<load-on-startup>-5</load-on-startup>
 	</servlet>
 
