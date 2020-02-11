@@ -23,15 +23,10 @@ public class UserFilter implements Filter {
         System.out.println(firstName);
         
         
-		chain.doFilter(req, resp);// Request goes to servlet .
+		chain.doFilter(req, resp);// Request goes to Filter/servlet .
+		
 		
 		System.out.println("Post process the Resonse.");
-		
-		
-		
-		
-		
-		
 	}
 
 	public void destroy() {

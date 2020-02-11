@@ -23,7 +23,22 @@
 
 	<filter-mapping>
 		<filter-name>kkkkk</filter-name>
-		<url-pattern>/*</url-pattern>
+		<url-pattern>/uf</url-pattern>
 	</filter-mapping>
+
+
+	<filter>
+		<filter-name>sf</filter-name>
+		<filter-class>com.elegant.SecondFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>sf</filter-name>
+		<url-pattern>/uf</url-pattern>
+	</filter-mapping>
+
+
+
+
 
 </web-app>
