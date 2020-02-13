@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>10FiltersAPP</display-name>
+  <welcome-file-list>
+    <welcome-file>input1.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>us</servlet-name>
+    <servlet-class>com.elegant.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>us</servlet-name>
+    <url-pattern>/uf</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SecondServlet</display-name>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.elegant.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/ss</url-pattern>
+  </servlet-mapping>
+</web-app>
