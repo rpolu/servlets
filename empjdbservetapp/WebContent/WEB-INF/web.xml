@@ -4,12 +4,15 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	id="WebApp_ID" version="2.5">
 	<servlet>
-		<servlet-name>ws</servlet-name>
-		<servlet-class>userwishapp.WishServlet</servlet-class>
+		<servlet-name>es</servlet-name>
+		<servlet-class>com.elegant.sevlet.EmpServlet</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
-		<servlet-name>ws</servlet-name>
-		<url-pattern>/greetuser</url-pattern>
+		<servlet-name>es</servlet-name>
+		<url-pattern>/saveemp</url-pattern>
 	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>empinput.html</welcome-file>
+	</welcome-file-list>
 </web-app>
