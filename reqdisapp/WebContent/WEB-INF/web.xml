@@ -11,11 +11,20 @@
 	<servlet>
 		<servlet-name>es</servlet-name>
 		<servlet-class>com.elegant.EmpServlet</servlet-class>
+		<init-param>
+		   <param-name>in</param-name>
+		   <param-value>elegnat</param-value>
+		</init-param>
+		<init-param>
+		   <param-name>address</param-name>
+		   <param-value>Marathalli</param-value>
+		</init-param>
+		<load-on-startup>0</load-on-startup>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>es</servlet-name>
-		<url-pattern>/showemp</url-pattern>
-	</servlet-mapping>
+	<servlet-name>es</servlet-name>
+	<url-pattern>/showemp</url-pattern>
+</servlet-mapping>
 	
 </web-app>

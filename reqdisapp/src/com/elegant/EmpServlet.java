@@ -4,11 +4,21 @@ import java.io.IOException;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
 public class EmpServlet extends GenericServlet {
+
+	public void init(ServletConfig config) throws ServletException {
+
+		String nameInstute = config.getInitParameter("in");
+		String adddress = config.getInitParameter("address");
+
+		System.out.println(adddress + " " + nameInstute);
+
+	}
 
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
 
