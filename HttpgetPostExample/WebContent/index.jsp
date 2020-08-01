@@ -8,7 +8,7 @@
 </head>
 <body bgcolor="wheat">
 
-<form action="fhs" method="get">
+<form action="fhs">
 
       EMP Id:<input type="text" name="eid"><br>
       <input type="submit" value="Get Emp Details">  

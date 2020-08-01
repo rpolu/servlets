@@ -1,0 +1,36 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+
+	<filter>
+		<filter-name>f1</filter-name>
+		<filter-class>com.elegent.MyFilter1</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>f1</filter-name>
+		<url-pattern>/msg</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>f2</filter-name>
+		<filter-class>com.elegent.MyFilter2</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>f2</filter-name>
+		<url-pattern>/msg</url-pattern>
+	</filter-mapping>
+	
+
+
+	<servlet>
+		<servlet-name>ms</servlet-name>
+		<servlet-class>com.elegent.MyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ms</servlet-name>
+		<url-pattern>/msg</url-pattern>
+	</servlet-mapping>
+</web-app>
