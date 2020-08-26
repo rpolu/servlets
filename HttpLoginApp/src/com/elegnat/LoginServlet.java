@@ -11,12 +11,15 @@ import javax.servlet.http.HttpSession;
 
 public class LoginServlet extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-		response.setContentType("text/html");
-		PrintWriter printWriter = response.getWriter();
+		
 		String n = request.getParameter("name");
 		String p = request.getParameter("password");
 
-		if (p.equals("admin123")) {
+		
+		response.setContentType("text/html");
+		PrintWriter printWriter = response.getWriter();
+		
+		if (p.equals("admin")) {
 			printWriter.println("Welcome, " + n);
 			HttpSession session = request.getSession();
 			session.setAttribute("name", n);
